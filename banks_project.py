@@ -2,12 +2,12 @@
 # Code for ETL operations on Country-GDP data
 
 # Importing the required libraries
-import pandas as pd 
-from bs4  import BeautifulSoup
-import requests 
-from datetime import datetime 
-import numpy as np
-import sqlite3
+import pandas as pd #For handling data, especially data frames.
+from bs4  import BeautifulSoup #For parsing and extracting HTML content from web pages.
+import requests #For making HTTP requests to fetch the webpage data.
+from datetime import datetime #For handling dates and times, specifically for logging.
+import numpy as np #For numerical operations, like rounding.
+import sqlite3 #For interacting with SQLite databases.
 
 # initialize all the known entities
 url = 'https://web.archive.org/web/20230908091635/https://en.wikipedia.org/wiki/List_of_largest_banks'
